@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'font1'; 
+  src: url('./RubikDoodleShadow-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'font2'; 
+  src: url('./SingleDay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+html{
+  background-color: antiquewhite;
+}
+#header {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-family: 'font1', sans-serif;
+  font-size: 2.5rem;
+}
+.superCard{
+  font-family: 'font2', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  justify-content: center;
+}
+.card{
+  flex: 0 0 calc(25% - 1rem);
+  max-width: calc(25%-1rem);
+  margin: 1rem;
+
+}
