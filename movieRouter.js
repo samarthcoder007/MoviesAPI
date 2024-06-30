@@ -73,9 +73,9 @@ route.delete('/:name',getMovieByName, async (req,res) => {
 
 async function getMovieByName(req,res,next){
   let movie;
-  const playerName = capitalize(req.params.name);
+  const movieName = capitalize(req.params.name);
   try {
-      movie = await Movies.findOne({name: playerName});
+      movie = await Movies.findOne({name: movieName});
 
   if (!movie) {
     return res.status(404).json({ message: 'Movies not found' });
