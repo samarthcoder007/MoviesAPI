@@ -1,4 +1,4 @@
-const Movies = require('./movies.js');
+const Movies = require('../movies.js');
 const express = require('express');
 const route = express.Router();
 
